@@ -71,8 +71,5 @@ export default {
     }
   },
   getters: {
-    test(state){
-      return state
-    }
   }
 }

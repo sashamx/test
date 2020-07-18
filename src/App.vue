@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import { mapState, mapGetters } from 'vuex'
+import { mapState } from 'vuex'
 import Post from './components/Post'
 import Pagination from './components/Pagination'
 export default {
@@ -60,9 +60,6 @@ export default {
       category: state => state.posts.category,
       sort: state => state.posts.sort,
     }),
-    ...mapGetters([
-      'test'
-    ]),
   },
   async mounted(){
     try {
