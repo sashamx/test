@@ -12,7 +12,7 @@
         </select>
 
         <span><strong>Sort by date:</strong></span>
-        <select @change="onChangeDate($event)" v-model="dateKey">
+        <select @change="onChange($event)" v-model="dateKey">
           <option
             v-for="d in dates"
             :key="d"
@@ -91,9 +91,6 @@ export default {
     },  
     onChange(){
       this.$store.dispatch('changeCat', this.catKey)
-      this.$store.dispatch('changeDate', this.dateKey)
-    },
-    onChangeDate(){
       this.$store.dispatch('changeDate', this.dateKey)
     },
     urlBuild(){
