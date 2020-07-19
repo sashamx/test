@@ -46,7 +46,7 @@ export default {
   },
   data(){
     return {
-      catKey: '',
+      catKey: 0,
       cats: [1,2,3,4,5,6,7,8,9,10],
       dateKey: 'Last',
       dates: ['Last', 'Early'],
